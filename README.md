@@ -67,7 +67,11 @@ Simula o pH do solo:
 - Apagado → irrigação desativada
 
 ---
+## 🖼️ Circuito no Wokwi
 
+Imagem adicionada 
+
+---
 
 ## 🎥 Vídeo Demonstrativo
 
