@@ -39,15 +39,25 @@ O projeto demonstra, de forma prática, a aplicação de conceitos de Internet d
 
 Dentre os arquivos e pastas presentes no projeto:
 projeto-farmtech/: pasta principal do projeto contendo toda a aplicação embarcada
+
 include/: arquivos de cabeçalho (.h) do projeto
+
 lib/: bibliotecas auxiliares utilizadas
+
 src/: código fonte principal em C/C++ (ESP32)
+
 test/: arquivos de teste do projeto
+
 diagram.json: configuração do circuito utilizado na simulação
+
 platformio.ini: arquivo de configuração do PlatformIO
+
 wokwi.toml: configuração da simulação no Wokwi
+
 README.md: documentação geral do projeto
+
 Simulator.png: imagem do circuito montado na plataforma Wokwi
+
 
 ---
 
