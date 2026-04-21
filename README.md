@@ -1,22 +1,78 @@
-# 🌱 Sistema de Irrigação Inteligente com ESP32
+# FIAP - Faculdade de Informática e Administração Paulista
 
-## 📌 Descrição do Projeto
+## 🌱 Sistema de Irrigação Inteligente com ESP32
 
-Este projeto simula um sistema de irrigação inteligente utilizando o microcontrolador ESP32.  
-O desenvolvimento foi realizado no **Visual Studio Code com PlatformIO** e o circuito foi simulado utilizando a plataforma **Wokwi**.
+### Nome do grupo
 
-O objetivo é automatizar o acionamento da irrigação com base em condições do solo, como umidade, pH e níveis de nutrientes.
+Natalia Faro
+
+---
+
+## 👨‍🎓 Integrantes:
+
+* Natalia de Lima Faro
+
+---
+
+## 👩‍🏫 Professores:
+
+### Tutor(a)
+
+Cap 1 - Um Mapa do Tesouro
+
+
+---
+
+## 📜 Descrição
+
+Este projeto simula um sistema de irrigação inteligente utilizando o microcontrolador ESP32. O desenvolvimento foi realizado no **Visual Studio Code com PlatformIO** e o circuito foi simulado utilizando a plataforma **Wokwi**.
+
+O objetivo é automatizar o acionamento da irrigação com base em condições do solo, como umidade, pH e níveis de nutrientes. O sistema realiza leituras simuladas por meio de sensores e botões, tomando decisões automáticas para ativar ou não a irrigação.
+
+A irrigação (representada por um LED) será ativada apenas quando todas as condições forem atendidas: níveis adequados de Nitrogênio, Fósforo e Potássio (NPK), umidade do solo abaixo de 40% e pH dentro de uma faixa aceitável. Caso alguma dessas condições não seja satisfeita, o sistema mantém a irrigação desligada.
+
+O projeto demonstra, de forma prática, a aplicação de conceitos de Internet das Coisas (IoT) no agronegócio, contribuindo para o uso eficiente de recursos hídricos e tomada de decisão automatizada.
+
+---
+
+## 📁 Estrutura de pastas
+
+* **assets**: arquivos como imagens do circuito (ex: Wokwi)
+* **src**: código fonte do projeto em C/C++ (ESP32)
+* **README.md**: documentação geral do projeto
+
+---
+
+## 🔧 Como executar o código
+
+### Pré-requisitos:
+
+* Visual Studio Code
+* Extensão PlatformIO
+* Conta na plataforma Wokwi (simulação online)
+
+### Passo a passo:
+
+1. Clone o repositório do GitHub
+2. Abra o projeto no Visual Studio Code
+3. Instale o PlatformIO (caso ainda não tenha)
+4. Compile e execute o código no ESP32
+5. Para simulação:
+
+   * Acesse o Wokwi
+   * Monte o circuito conforme a imagem disponibilizada
+   * Execute a simulação
 
 ---
 
 ## ⚙️ Componentes Utilizados
 
-- ESP32
-- 3 botões (simulando NPK)
-- Sensor DHT22 (umidade)
-- Sensor LDR (simulação de pH)
-- LED (bomba de irrigação)
-- Resistores
+* ESP32
+* 3 botões (simulando NPK)
+* Sensor DHT22 (umidade)
+* Sensor LDR (simulação de pH)
+* LED (bomba de irrigação)
+* Resistores
 
 ---
 
@@ -24,49 +80,38 @@ O objetivo é automatizar o acionamento da irrigação com base em condições d
 
 O sistema realiza a leitura dos sensores e toma a decisão de ligar ou não a irrigação.
 
-A irrigação (LED) será ativada quando:
+A irrigação será ativada quando:
 
-- Os três nutrientes estiverem adequados:
-  - Nitrogênio (N)
-  - Fósforo (P)
-  - Potássio (K)
-- A umidade do solo estiver abaixo de 40%
-- O pH (simulado pelo LDR) estiver dentro de uma faixa aceitável
-
-Caso qualquer uma dessas condições não seja atendida, a irrigação permanece desligada.
+* Os três nutrientes estiverem adequados (N, P e K)
+* A umidade do solo estiver abaixo de 40%
+* O pH estiver dentro da faixa aceitável
 
 ---
 
 ## 🎮 Funcionamento
 
 ### 🔘 Botões (NPK)
-- Primeiro botão → Nitrogênio (N)
-- Segundo botão → Fósforo (P)
-- Terceiro botão → Potássio (K)
 
-Quando pressionados, indicam que o nutriente está em nível adequado.
+* Botão 1 → Nitrogênio
+* Botão 2 → Fósforo
+* Botão 3 → Potássio
 
----
+### 💧 Sensor DHT22
 
-### 💧 Sensor de Umidade (DHT22)
-Simula a umidade do solo:
-- Valores baixos (< 40%) → solo seco → irrigação necessária
-- Valores altos → irrigação desnecessária
+* < 40% → solo seco → irrigação ativada
+* ≥ 40% → irrigação desligada
 
----
+### ☀️ Sensor LDR
 
-### ☀️ Sensor LDR (pH)
-Simula o pH do solo:
-- Valores adequados → irrigação pode ocorrer
-- Valores fora da faixa → irrigação não ocorre
+* Simula o pH do solo
 
----
+### 💡 LED
 
-### 💡 LED (Bomba de Irrigação)
-- Aceso → irrigação ativada
-- Apagado → irrigação desativada
+* Aceso → irrigação ligada
+* Apagado → irrigação desligada
 
 ---
+
 ## 🖼️ Circuito no Wokwi
 
 ![Circuito](./Simulator.png)
@@ -75,23 +120,34 @@ Simula o pH do solo:
 
 ## 🎥 Vídeo Demonstrativo
 
-O funcionamento completo do sistema pode ser visualizado no vídeo abaixo:
-
 https://www.youtube.com/watch?v=erIzgrY8Xik
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-- C++
-- ESP32
-- PlatformIO
-- Wokwi
+* C++
+* ESP32
+* PlatformIO
+* Wokwi
 
 ---
 
 ## 📊 Conclusão
 
 O projeto demonstra como sensores e lógica embarcada podem ser utilizados para automatizar processos agrícolas, permitindo decisões inteligentes e contribuindo para o uso eficiente de recursos hídricos.
+
+---
+
+## 🗃 Histórico de lançamentos
+
+* 0.1.0 - 21/04/2026 - Versão inicial do projeto
+* 0.2.0 - 21/04/2026 - Documentação e simulação concluídas
+
+---
+
+## 📋 Licença
+
+MODELO GIT FIAP por FIAP está licenciado sob Attribution 4.0 International.
 
 ---
