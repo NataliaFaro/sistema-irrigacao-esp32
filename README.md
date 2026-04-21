@@ -70,6 +70,7 @@ Simula o pH do solo:
 ## 🖼️ Circuito no Wokwi
 
 Imagem adicionada 
+https://github.com/NataliaFaro/sistema-irrigacao-esp32/blob/main/Simulator.png
 
 ---
 
